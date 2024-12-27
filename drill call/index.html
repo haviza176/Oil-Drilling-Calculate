@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil Drilling Volume Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Drilling Volume Calculator</h1>
+    </header>
+    <main>
+        <div class="drill-input">
+            <label for="depth">Drill Depth (meters):</label>
+            <input type="number" id="depth" placeholder="e.g., 1500">
+        </div>
+        <div class="drill-input">
+            <label for="diameter">Drill Diameter (inches):</label>
+            <input type="number" id="diameter" placeholder="e.g., 8">
+        </div>
+        <button onclick="calculateVolume()">Calculate Volume</button>
+        <div id="result" class="result" style="display: none;"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
